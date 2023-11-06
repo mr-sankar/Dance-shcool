@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dance shcool</title>
+    <link rel="icon" type="image/x-icon" href="website logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        
+        .img1{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 170px;
+        }
+        ul{
+            position: absolute;
+            top: 30px;
+            left: 300px;
+        }
+        .li1{
+
+            display: inline;
+            padding: 10px 25px;
+           
+            
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: Segoe UI;
+
+        }
+        li a:hover{
+            color:rgb(228, 71, 71);
+        }
+        html{
+            background: url('./main1.webp')no-repeat center  fixed;
+            background-size: cover;
+           
+        }
+        .bu{
+            padding: 10px 15px ;
+            position: absolute;
+            right: 330px;
+            top: 35px;
+            background-color:#FEBE10;
+            color: whitesmoke;
+            font-size: 15px;
+            font-weight: 600;
+            /* box-shadow: 1px 1px 1px 1px black; */
+            border: 0px;
+            border-radius: 2px;
+
+        }
+        .bu{
+            position: fixed ;
+        }
+        .bu:hover .nav2{
+          
+            /* transform: scale(1.5);
+           transition: transform .5s; */
+           position: absolute;
+            left: 150px;
+            top: 300px;
+            background-color: #1F1F1F;
+            padding: 25px 30px;
+
+        }
+        .div{
+            background-color: bisque;
+        }
+        .h1{
+            font-size: 70px;
+            font-weight: 600px;
+            font-family:  Freestyle Script;
+            font-style: normal;
+            color: whitesmoke;
+            width: 550px;
+            position: absolute;
+            top: 400px;
+            left: 150px;
+
+
+        }
+        p{
+            font-family:Segoe UI;
+            font-weight: 200;
+            font-size: 20px;
+            color: rgb(57, 196, 238);
+            position: absolute; 
+            top: 580px;
+            left: 150px;
+            width: 450px;
+
+        }
+        .nav2{
+            position: absolute;
+            left: 150px;
+            top: 300px;
+            background-color: #1F1F1F;
+            padding: 30px 30px;
+            border-radius: 20px;
+        }
+        input::placeholder{
+            font-size: 15px;
+        }
+        input,select{
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+        option{
+            font-size: 15px;
+        }
+        .bu2{
+            padding: 7.5px 15px;
+            background-color: rgb(218, 28, 28);
+            border-radius: 8px;
+        }
+       
+        .menu{
+
+            display: none;
+        }
+        ul li:hover .menu{
+            display: block;
+            color: whitesmoke;
+            list-style-type: none;
+            background-color: #312c2c;
+            padding:10px 20px;
+            font-family: Segoe UI;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        .menu{
+            position: absolute;
+            top: 25px;
+            left: 120px;
+        }
+        .ul3{
+            display: none;
+        }
+       ul .li1:hover .ul3{
+        display: block;
+        color: whitesmoke;
+        list-style-type: none;
+        background-color: #312c2c;
+        padding:10px 20px;
+        font-family: Segoe UI;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+       }
+       .ul3{
+        position: absolute;
+        left: 210px;
+        top: 25px;
+       }
+       .ul4{
+        display: none;
+       
+       }
+       ul .li1:hover .ul4{
+        display: block;
+        color: whitesmoke;
+        list-style-type: none;  
+        background-color: #312c2c;
+        padding:10px 20px;
+        font-family: Segoe UI;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+       }
+       .ul4{
+        position: absolute;
+        top: 25px;
+        left: 300px;
+       }
+       .ul5{
+        display: none;
+       }
+       ul .li1:hover .ul5{
+        display: block;
+        list-style-type: none;
+        color: whitesmoke;
+        background-color: #312c2c;
+        font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+
+       }
+       .ul5{
+        position: absolute;
+        left: 450px;
+        top: 25px;
+       }
+       .nav1{
+        position: fixed;
+        top: 0px;
+        height: 100px;
+        width: 1600px;
+       }
+       .upis{
+        display: none;
+       }
+       .upi1,.upi2,.upi3{
+        background-color: white;
+        border-radius: 5px;
+       }
+       .li2:hover .upis{
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        left: 10px;
+        top: 50px;
+        padding: 20px;
+        background-color: rgba(107, 107, 107,0.5);
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+        
+       }
+       .li1 .ul5{
+        position: absolute;
+        z-index: 10px;
+       }
+       .fa-arrow-down-long{
+        font-size: 20px;
+       }
+       .book {
+       
+        position: absolute;
+        font-size: 40px;
+        top: -70px;
+        left: 5px;
+        background-color: #1F1F1F;
+
+        width: 350px;
+        padding: 10px;
+        font-weight: 600px;
+            /* font-family:  Freestyle Script; */
+          
+            color: red;
+            border-radius: 5pc;
+       }
+
+        
+        
+        
+       
+
+    </style>
+</head>
+<body >
+    <nav class="nav1">
+        <img class="img1" src="./dp logo1.jpg" alt="">
+    <div class="div1">
+        <ul class="ul1">
+
+            <li class="li1">
+                <a  href="index.html">Home</a>
+               
+            </li>
+            <li class="li1">
+                <a class="ab1" href="">About</a>
+                <ul class="menu">
+
+                    <li class="about"><a href="./Director.html"> Our Director</a></li>
+                    <!-- <li class="about"><a href=""> succsess Stories</a> </li> -->
+                    <li class="about"><a href="./Location.html"> Location</a></li>       
+                </ul>
+            </li>
+            <li class="li1"><a href="">Classes</a>
+                <ul class="ul3">
+                <li><a href="./Bharatanatyam.html">Bharatanatyam</a></li>
+                <li><a href="./hiphop.html">Hip hop</a></li>
+                <li><a href="BreakDance.html">BreakDance</a></li>
+                <li><a href="./folkDance.html">Folk Dance</a></li>
+                </ul>
+            </li>
+
+           
+            <li class="li1">
+                <a href="">costumes</a>
+                <ul class="ul4">
+                <li><a href="Bharatanatyam costumes.html">Bharat Natyam  Costume</a></li>
+                
+                <li><a href="./Indian Dance Costumes.html ">Indian Dance Costumes</a></li>
+                
+               
+                <li><a href="./Manipuri Dance Costume.html">Manipuri Dance Costume</a></li>
+                
+               
+            </ul>
+            </li>
+
+            <li class="li1">
+                <a href="">Get Started</a>
+                <ul class="ul5">
+                    <li><a href="./netbanking.html"> <i class="fa-solid fa-building-columns"></i> Netbanking </a></li>
+                    <li class="li2">
+                        <a href="upi.html"> <i class="fa-solid fa-qrcode"></i> UPI</a>
+                      
+                    
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="li1"><a href="Contact.html">Contact</a>
+            </li>
+     
+        </ul>
+        
+    </div>
+    </nav>
+    <h1 class="h1">Express Your Inner Soul With Dance</h1>
+    <p>Fun and immersive Bharatanatyam and Bollywood
+        dance classes for children and adults.</p>
+        <a href="">  <button class="bu">Book Trial Class <i class="fa-solid fa-angle-down"></i></button></a>
+ <nav class="nav2">
+    <h1 class="book trial">Book Trial Classes</h1>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="number" placeholder="phone">
+    <input type="number" placeholder="Age">
+   <select >
+    <option > Dance Style</option>
+    <option >Bharatanatyam</option>
+    <option >Hip hop</option>
+    <option >Break Dance</option>
+    <option >Folk Dance</option>
+   </select>
+   <button class="bu2"><a class="a2" href="index.html">JOIN US TODAY</a></button>
+</nav>
+</body>
+</html>
